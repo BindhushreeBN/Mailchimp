@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon"> 
+    <style>
+        #navbar{
+            width: 100%;
+            height: 80px;
+            background-color:white;
+            display: flex;
+            margin-top: -8px;
+            position: static;
+            top: 0px;         
+        }
+
+        #navbar:hover{
+          background-color: whitesmoke;
+        }
+
+        .leftside{
+            display: flex;
+            gap: 30px;
+            justify-content: left;
+            align-content: flex-start;
+            padding-top: 16px;
+            padding-left: 10px;
+            font-size: 19px;
+            padding-left: 40px;
+        }
+
+        .leftside :hover{
+          text-decoration: underline;
+        }
+
+
+        /* Mailchimp logo design*/
+        .logo {
+          display: flex;
+          margin-left: 100px;
+          margin-top: 10px;
+          gap: 10px;
+        }
+
+        .logo>img{
+           width: 4rem;
+           height: 4vw;
+           border-radius: 50%;
+        }
+       
+        .logo>h3{
+         font-size: 30px;
+         margin-top: 19px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-weight: bolder;
+
+        }
+
+
+        /*underling when we select the options*/
+        .rightside div:nth-child(1) :hover{
+          text-decoration: underline;
+        }
+
+            .rightside{
+          display: flex;
+        }
+        /*code for button*/
+        .rightside button{
+            border: 10px;
+            cursor: pointer;
+            background-color: transparent;
+        } 
+
+        .rightside div:nth-child(1){
+          margin-left: 50px;
+          text-align: center;
+        }
+
+
+        /* image and search web logo design*/
+        .rightside img{
+             width:30px;
+            margin-top: 35px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .rightside img:hover{
+            transform:scale(1.1) ;
+        }
+
+
+        /*for login button*/
+        .rightside :nth-child(4){
+            border: 1px solid black;
+            margin-left: 100px;
+            margin-top: 22px;
+            width: 20%;
+            text-align: center;
+            padding: 13px;
+            height: 20px;
+            font-weight: bold;
+        }
+
+        .rightside  :nth-child(4) button{
+            color: black;
+          font-size: medium;
+          font-weight: bold;
+        }
+
+
+        /*for sign in button*/
+        .rightside :nth-child(5){
+            border: 1px solid  black;    
+            margin-top: 22px;
+            margin-left:10px;
+            width: 20%;
+            text-align: center;
+            padding: 13px;
+            height: 20px;     
+            background-color: #ede432;
+        }
+
+        .rightside  :nth-child(5) button{
+          color: black;
+          font-size: medium;
+          font-weight: bold;
+        }
+
+
+        /*Top section*/
+        #topSection-1{
+          width: 100%;
+          height: 600px;
+          background-color: #f7f4f4;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        #topSection-1 div{
+            width: 42%;
+            margin:auto;
+            padding-right: 100px;
+            
+        }
+
+        #topSection-1 div h1{
+          font-size: 4rem;
+        font-weight: lighter;     
+        }
+
+        #topSection-1 div p{
+          font-size: 23px;
+          line-height: 30px;
+          width: 86%;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #topSection-1 div:nth-child(1) {   
+            margin-left: 120px;
+          }
+          
+        #topSection-1 div button{
+          padding: 20px;
+          width: 140px;
+          background-color: #f0e04e;
+          color: white;
+          font-size: medium;
+          font-weight: bold;
+          border: 0px;
+        }
+
+        #topSection-1 div button{
+           background-color: rgb(179, 179, 24);
+        }
+      
+        #topSection-1 :nth-child(2) img{
+         width: 90%;
+         margin-right: 10px;
+        }
+
+
+        /*Bottom Section*/
+      .topSection-5 {
+        margin-top: 50px;
+        width: 100%;
+        height: 250px;
+        background-color: #f6f6ff;
+        padding-top: 40px;
+      }
+
+      .topSection-5>h1{
+        text-align: center;
+        font-size: 50px;    
+        font-weight: lighter;
+      }
+
+      .topSection-5>p{
+                text-align: center; 
+        font-size: 30px;
+      }
+
+      .relatedlink{
+        display: flex;
+        justify-content: center;
+        gap:50px;
+      }
+    </style>
+</head>
+<body>
+      <div id="navbar">
+            <div class="leftside">
+              <h3>Products</h3>
+              <h3>Resourses</h3>
+              <h3>Inspiration</h3>
+              <h3>Pricing</h3>
+            </div>
+          
+            <div class="logo">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/mailchimp-2752128-2284945.png" alt="">
+              <h3>Mailchimp</h3>
+            </div>
+
+            <div class="rightside">
+              <div>
+                <br>
+                <h3>Sales:1(000)3155939</h3>
+              </div>
+                <div><button class="lan"><span><img src="https://seeklogo.com/images/G/globe-logo-42DE548AC7-seeklogo.com.png" alt="error"></span></button></div>
+                <div><button><span><img src="https://mailchimp.com/release/plums/cxp/images/global_nav/icon-search.a911ce8d.svg" alt="error"></span></button></div>
+                <div><a href="Login.html"><button>Login</button></a></div>
+                <div><a href="signup.html"><button>SignUp</button></a></div>
+            </div>
+        </div>
+
+      <div id="topSection-1">
+            <div>
+               <h1>Create a website for free</h1>
+               <p>Desgin and simplicity are at the core of our website builder. Easily create, customize and promote stunning website that's search engine ready all on your own with the power of Mailchimp's platform.</p>
+              <a href="signup.html"><button>Start your trail for free</button></a>
+            </div>
+            <div>
+              <img src="https://eep.io/images/yzco4xsimv0y/5EDYfjhY65uLjRNqcJQOKN/a7432a264639c40e2c00c6ffb593d828/Automations_-_Hero_Image_-_060622.png?w=1520&fm=webp&q=70" alt="marketing">
+            </div>
+        </div>
+
+    <div class="topSection-5">
+       <h1>Brillant web desgin, simplified</h1>
+       <p>Our website builder brings you unique vision to life- no design or code expirenced required.<br>
+         Create a customizable website optmized website in an hour.</p>
+   </div>
+</body>
+</html>
+
+<script>
+     document.querySelector(".lan").addEventListener("click",langaugfun);
+     function langaugfun(event){
+      event.preventDefault()
+      let select = document.createElement("select")
+      let opt1 = document.createElement("option")
+      opt1.innerText="English"
+      select.append(opt1)
+      document.querySelector(".lan").append(select)
+     }
+</script>
